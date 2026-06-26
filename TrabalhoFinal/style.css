@@ -1,4 +1,4 @@
-/* Variáveis mantidas e reforçadas */
+/* Variáveis globais de cores para temas claro e escuro */
 :root {
     --bg-principal: #f8fafc;
     --bg-card: #ffffff;
@@ -168,6 +168,7 @@ header {
 
 .redes-sociais {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     margin-top: 0.8rem;
@@ -247,9 +248,10 @@ header {
     color: var(--texto-secundario);
     line-height: 1.6;
     font-size: 0.95rem;
+    text-align: justify;
 }
 
-/* Sobre mim - template */
+/* Sobre mim */
 .card-apresentacao {
     width: 100%;
     max-width: 900px;
@@ -338,12 +340,6 @@ header {
     font-size: 1rem;
 }
 
-@media (max-width: 900px) {
-    .grade-sobre {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Grid de projetos */
 .grid-projetos {
     display: grid;
@@ -363,6 +359,24 @@ header {
     position: relative;
     overflow: hidden;
     text-align: left;
+}
+
+.card-projetos {
+    background: var(--bg-card);
+    padding: 1.8rem 2rem;
+    border-radius: 18px;
+    border: 1px solid var(--borda);
+    box-shadow: var(--sombra);
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.card-projetos .subtitulo {
+    margin: 0;
+    color: var(--texto-secundario);
+    line-height: 1.7;
 }
 
 .card-projeto:hover {
@@ -468,11 +482,38 @@ footer {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .menu-principal {
         flex-direction: column;
+        align-items: stretch;
     }
 
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .conteudo-principal,
+    .conteudo-projetos {
+        padding: 3rem 5%;
+    }
+
+    .grid-projetos {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card-projeto {
+        padding: 1.5rem;
+    }
+
+    .grade-sobre {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
     .perfil {
         flex-direction: column;
         text-align: center;
