@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Vasconcelos | Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu-principal">
+            <div class="logo">Rafael Vasconcelos</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html" class="ativo">Projetos</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+            </ul>
+            <button id="btn-tema" onclick="alternarTema()">🌙 Modo Escuro</button>
+        </nav>
+    </header>
+
+    <main class="conteudo-projetos animacao-fade">
+        <h1 class="titulo-secao">Portfolio de Projetos</h1>
+        <p class="subtitulo">Conheça meus projetos no GitHub e meus pitches.</p>
+
+        <div class="grid-projetos">
+            
+            <article class="card-projeto github">
+                <div class="tag-status">GitHub</div>
+                <h3>BeaverKnight</h3>
+                <p>Projeto de um jogo focado na sustentabilidade ambiental em 8-bit.</p>
+                <a href="https://github.com/novaes11/BeaverKnight" target="_blank" class="btn-acao">Explorar Código</a>
+            </article>
+
+            <article class="card-projeto github">
+                <div class="tag-status">GitHub</div>
+                <h3>API REST Integrada</h3>
+                <p>API Rest completa para gerenciar uma biblioteca de jogos.</p>
+                <a href="https://github.com/rafavvs/API-Rest-completa-integrada" target="_blank" class="btn-acao">Explorar Código</a>
+            </article>
+
+            <article class="card-projeto github">
+                <div class="tag-status">GitHub</div>
+                <h3>SolveTechAi</h3>
+                <p>Plataforma de monitoramento clínico e auxílio diagnóstico especializada.</p>
+                <a href="https://github.com/novaes11/SolveTechAi" target="_blank" class="btn-acao">Explorar Código</a>
+            </article>
+
+            <article class="card-projeto slides">
+                <div class="tag-status slide-tag">Pitch</div>
+                <h3>StepCash</h3>
+                <p>Projeto focado em mobilidade ativa para todos, saúde, lazer e cashback.</p>
+                <button onclick="abrirModal('https://drive.google.com/file/d/1tWRpy-O3P84OmSQ1Mmx4y_iDLc2nPW1T/view?usp=sharing')" class="btn-acao">Ver Slides</button>
+            </article>
+
+            <article class="card-projeto slides">
+                <div class="tag-status slide-tag">Pitch</div>
+                <h3>HealthWelfare</h3>
+                <p>Projeto focado em ajudar na saúde de estudantes universitários que estudam e trabalham.</p>
+                <button onclick="abrirModal('https://docs.google.com/presentation/d/1wlkGayEo18gUbeGYCw9P7IqbWOmsO2FLcgktAc8JXC0/edit?usp=sharing')" class="btn-acao">Ver Slides</button>
+            </article>
+
+            <article class="card-projeto slides">
+                <div class="tag-status slide-tag">Pitch</div>
+                <h3>Mentorize</h3>
+                <p>Projeto de um jogo capaz de auxiliar da alfabetização até o estudo intensivo.</p>
+                <button onclick="abrirModal('https://docs.google.com/presentation/d/1mQlDMlmD1VXMLtV0Sre9P6v3HfMOebWFJhBOuxjLPqg/edit?usp=sharing')" class="btn-acao">Ver Slides</button>
+            </article>
+
+        </div>
+    </main>
+
+    <div id="modalSlides" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+            <iframe id="iframeSlides" src="" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Desenvolvido por Rafael Vasconcelos | UniFil Londrina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

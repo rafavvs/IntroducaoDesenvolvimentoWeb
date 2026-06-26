@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Vasconcelos | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu-principal">
+            <div class="logo">Rafael Vasconcelos</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="ativo">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+            </ul>
+            <button id="btn-tema" onclick="alternarTema()">🌙 Modo Escuro</button>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal animacao-fade">
+        <section class="perfil">
+            <div class="foto-container">
+                <img src="eu.jpg" alt="Rafael Vasconcelos" class="foto-perfil">
+            </div>
+            <div class="bio">
+                <h2>Olá, eu sou</h2>
+                <h1>Rafael Vasconcelos 👋</h1>
+                <h2>Estudante de Ciência da Computação e Desenvolvedor</h2>
+                <p>Sou aluno de Ciência da Computação na <strong>UniFil</strong> e atuo no desenvolvimento de software <strong>Full-Stack</strong>.</p>
+                <div class="redes-sociais">
+                    <a href="https://github.com/rafavvs" target="_blank" class="btn-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/rafael-vasconcelos-13982622a" target="_blank" class="btn-link">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="especialidades">
+            <div class="cabecalho-secao">
+                <h2 class="titulo-secao">Minhas Especialidades</h2>
+            </div>
+            <div class="grid-especialidades">
+                <article class="card-especialidade">
+                    <div class="imagem-especialidade">
+                        <img src="https://camo.githubusercontent.com/532e7edbcf3aa778d4bc3642870ac5cdca01fc3bd1a475dad75b653388c1852f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f6a6176612f6a6176612d6f726967696e616c2d776f72646d61726b2e737667" alt="Ícone Java">
+                    </div>
+                    <h3>Java</h3>
+                    <p>Desenvolvimento com foco em lógica, back-end e apps.</p>
+                </article>
+                <article class="card-especialidade">
+                    <div class="imagem-especialidade">
+                        <img src="https://camo.githubusercontent.com/5f9c88ee1da6ce5f954b5aa4902bdd20438598c332b6c71e405e4c2acc731176/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667" alt="Ícone JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Criação de interatividade e dinamismo para páginas web.</p>
+                </article>
+                <article class="card-especialidade">
+                    <div class="imagem-especialidade">
+                        <img src="https://camo.githubusercontent.com/b024a703f6c1dc4fca503f2d8663b6c69e2f2b8473e6461c35ed1ebbb4d3eabc/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f707974686f6e2f707974686f6e2d6f726967696e616c2e737667" alt="Ícone Python">
+                    </div>
+                    <h3>Python</h3>
+                    <p>Automação, scripts e projetos com foco em produtividade e análise.</p>
+                </article>
+                <article class="card-especialidade">
+                    <div class="imagem-especialidade">
+                        <img src="https://camo.githubusercontent.com/35ac0694790ddda21ada952700c09d2995ea90b8cb37857f52aa63041a131959/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f637373332f637373332d6f726967696e616c2e737667" alt="Ícone CSS3">
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Estilização moderna, responsividade e organização visual das páginas.</p>
+                </article>
+                <article class="card-especialidade">
+                    <div class="imagem-especialidade">
+                        <img src="https://camo.githubusercontent.com/822fcc8df1633008d599cfe1c3a85e7d15374fa6d9b08e3262e04106b4ea44b0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="Ícone HTML5">
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Estruturação e organização de conteúdos web.</p>
+                </article>
+                <article class="card-especialidade">
+                    <div class="imagem-especialidade">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="Ícone PostgreSQL">
+                    </div>
+                    <h3>Banco de Dados (PostgreSQL)</h3>
+                    <p>Modelagem, consultas e integração com sistemas e aplicações web.</p>
+                </article>
+                <article class="card-especialidade">
+                    <div class="imagem-especialidade">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1969/1969443.png" alt="Ícone IA Generativa">
+                    </div>
+                    <h3>IA Generativa</h3>
+                    <p>Exploração de ferramentas inteligentes para criar soluções mais rápidas.</p>
+                </article>
+                <article class="card-especialidade">
+                    <div class="imagem-especialidade">
+                        <img src="https://camo.githubusercontent.com/3230e901eaaa0581b465c53dfa03998ccadea4f89b9d85da010589635c99b0a0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f676f6f676c65636c6f75642f676f6f676c65636c6f75642d6f726967696e616c2e737667" alt="Ícone Google Cloud">
+                    </div>
+                    <h3>Google Cloud</h3>
+                    <p>Conhecimento em serviços cloud, infraestrutura e modelagem em nuvem.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Desenvolvido por Rafael Vasconcelos | UniFil Londrina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

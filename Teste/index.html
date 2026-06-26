@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <button onclick="clicou()">Clique</button>
+
+    <h1 id="titulo">JavaScript</h1>
+
+    <button onclick="alterar()">Pintar Título</button>
+
+    <button onclick="resetar()">Resetar Título</button>
+
+    <button id="botaoCachorro">Cachorro endeota</button>
+
+    <script>
+        function clicou() {
+            alert("Você clicou!");
+        }
+
+        function alterar() {
+            let titulo = document.getElementById("titulo");
+            titulo.textContent = "JavaScript";
+            titulo.style.color = "blue";
+        }
+
+        function resetar() {
+            let titulo = document.getElementById("titulo");
+            titulo.textContent = "JavaScript";
+            titulo.style.color = "black";
+        }
+
+        const linkCachorro = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6N--cJkSxXz8Mhh3FaaMdcbJdkEyAK6BkZy04-R_z5yo2PCWIzUUkWSZa&s=10";
+        const botaoCachorro = document.getElementById("botaoCachorro");
+
+        botaoCachorro.addEventListener("click", function() {
+            window.open(linkCachorro, "_blank");
+        });
+    </script>
+
+</body>
+</html>
